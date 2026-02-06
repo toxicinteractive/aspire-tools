@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="src/Toxic.Aspire.AppHost/Toxic.Aspire.AppHost.csproj" />
+  <Project Path="src/Toxic.Aspire/Toxic.Aspire.csproj" />
+</Solution>

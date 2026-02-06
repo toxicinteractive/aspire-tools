@@ -1,0 +1,37 @@
+{
+  "name": "toxic-aspire",
+  "image": "mcr.microsoft.com/devcontainers/dotnet:10.0",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:latest": {},
+    "ghcr.io/devcontainers/features/node:latest": {},
+    "ghcr.io/devcontainers/features/azure-cli:latest": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode-remote.remote-containers",
+        "ms-dotnettools.csdevkit",
+        "dbaeumer.vscode-eslint",
+        "EditorConfig.EditorConfig"
+      ],
+
+      "settings": {
+        "remote.autoForwardPorts": true,
+        "remote.autoForwardPortsSource": "hybrid",
+        "csharp.experimental.debug.hotReload": true
+      }
+    }
+  },
+  "remoteEnv": {
+    "WORKSPACE_DIR": "${containerWorkspaceFolder}",
+    "ASPNETCORE_Kestrel__Certificates__Default__Path": "${containerWorkspaceFolder}/.devcontainer/localhost.pfx",
+    "ASPNETCORE_Kestrel__Certificates__Default__Password": "changeit",
+    "DOTNET_WATCH_RESTART_ON_RUDE_EDIT": "true",
+    "DOTNET_WATCH_SUPPRESS_LAUNCH_BROWSER": "true",
+    "AZURE_CONFIG_DIR": "${containerWorkspaceFolder}/.az"
+  },
+  "updateContentCommand": {
+    //"restore-dotnet-tools": "dotnet tool restore --tool-manifest .config/dotnet-tools.json"
+  },
+  "postCreateCommand": "${containerWorkspaceFolder}/.devcontainer/post-create.sh"
+}

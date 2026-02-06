@@ -17,10 +17,9 @@ if ! [ -f $DEVC_DIR/localhost.pfx ]; then
   dotnet dev-certs https -ep $DEVC_DIR/localhost.pfx -p 'changeit'
 fi
 
-# copy and trust any custom cert to the ca store
-if [ -f $CUSTOM_HOST_CA ]; then
-  echo "Trusting custom CA cert $CUSTOM_HOST_CA"
-  sudo cp $CUSTOM_HOST_CA /usr/local/share/ca-certificates/
+if [ -f $CUSTOM_CA_FILE ]; then
+  echo "Trusting custom CA cert $CUSTOM_CA_FILE"
+  sudo cp $CUSTOM_CA_FILE /usr/local/share/ca-certificates/
   sudo update-ca-certificates
 fi
 

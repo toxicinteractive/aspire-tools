@@ -11,6 +11,7 @@
       "extensions": [
         "ms-vscode-remote.remote-containers",
         "ms-dotnettools.csdevkit",
+        "microsoft-aspire.aspire-vscode@prerelease",
         "dbaeumer.vscode-eslint",
         "EditorConfig.EditorConfig"
       ],
@@ -30,6 +31,11 @@
     "DOTNET_WATCH_SUPPRESS_LAUNCH_BROWSER": "true",
     "AZURE_CONFIG_DIR": "${containerWorkspaceFolder}/.az"
   },
+  "initializeCommand": "touch .devcontainer/.env",
+  "runArgs": [
+    "--env-file",
+    ".devcontainer/.env"
+  ],
   "updateContentCommand": {
     //"restore-dotnet-tools": "dotnet tool restore --tool-manifest .config/dotnet-tools.json"
   },

@@ -1,7 +1,7 @@
 <Project Sdk="Aspire.AppHost.Sdk/13.1.0">
-
   <ItemGroup>
     <ProjectReference Include="..\Toxic.Aspire\Toxic.Aspire.csproj" IsAspireProjectResource="false" />
+    <ProjectReference Include="..\Toxic.Aspire.SampleApp\Toxic.Aspire.SampleApp.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
@@ -13,5 +13,4 @@
     <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
     <UserSecretsId>a8f9e0ab-eeba-466e-8668-ce60e6dae68c</UserSecretsId>
   </PropertyGroup>
-
 </Project>

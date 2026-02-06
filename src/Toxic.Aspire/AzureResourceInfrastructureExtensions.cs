@@ -8,7 +8,7 @@ public static class AzureResourceInfrastructureExtensions
     extension(AzureResourceInfrastructure infrastructure)
     {
         /// <summary>
-        /// Shortcut for getting a resource from <see cref="Aspire.Hosting.Azure.AzureResourceInfrastructure.GetProvisionableResources"/>.
+        /// Shortcut for getting a resource from <see cref="Azure.Provisioning.Infrastructure.GetProvisionableResources()"/>.
         /// Assumes only a single resource of the type exists.
         /// </summary>
         public TResource GetProvisionableResource<TResource>() where TResource : ProvisionableResource

@@ -42,7 +42,7 @@ internal class NamingInfrastructureResolver : InfrastructureResolver
     /// Constructor.
     /// </summary>
     /// <param name="projectName">Short project name identifier, e.g. "hgfse".</param>
-    /// <param name="environmentName">The currently resolved dotnet environment name. See <see cref="Aspire.Hosting.IDistributedApplicationBuilder.Environment.EnvironmentName"/> </param>
+    /// <param name="environmentName">The currently resolved dotnet environment name. See <see cref="Microsoft.Extensions.Hosting.HostApplicationBuilder.Environment"/> </param>
     /// <param name="defaultRegion">Default Azure region. Used for region abbreviation. See <see cref="RegionNames"/>.</param>
     public NamingInfrastructureResolver(
         string projectName,

@@ -55,7 +55,7 @@ public static class ResourceBuilderExtensions
         /// The endpoint URL defaults to "https://otlp.eu01.nr-data.net" but can be overridden with the configuration variable "OTEL_EXPORTER_OTLP_ENDPOINT".
         /// This will automatically forward traces and metrics but to forward logs you need to configure your logging provider. For Serilog, use the official OpenTelemetry sink.
         /// </summary>
-        /// <param name="apiKey">A reference expression to a New Relic API key.</param>
+        /// <param name="apiKeyExpression">A reference expression to a New Relic API key.</param>
         /// <param name="entityName">The New Relic entity name for the service, or the resource name if null. The current environment name will be added to the name.</param>
         /// <param name="includeInDevelopmentEnvironment">Whether to send telemetry in the development environment.</param>
         public IResourceBuilder<TResource> WithNewRelicTelemetry(

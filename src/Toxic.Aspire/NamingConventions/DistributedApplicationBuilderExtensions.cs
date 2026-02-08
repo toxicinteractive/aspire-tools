@@ -18,7 +18,7 @@ public static class DistributedApplicationBuilderExtensions
     {
         /// <summary>
         /// Use the Azure resource naming convention system.
-        /// By default produces the following resource name structure: "type-workload-project-environment-region", e.g. "ca-cms-hgfse-prod-swc".
+        /// By default produces the following resource name structure: "type-project-workload-environment-region", e.g. "ca-hgfse-cms-prod-swc".
         /// Use the <see cref="IResourceNameResolver{T}"/> to override the naming resolution for specific resource types.
         /// </summary>
         /// <param name="projectName">Short project name identifier, e.g. "hgfse".</param>

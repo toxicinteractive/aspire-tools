@@ -1,8 +1,7 @@
 using Aspire.Hosting.Azure;
-using Azure.Provisioning.Expressions;
 using Microsoft.Extensions.Hosting;
 
-namespace Toxic.Aspire.Telemetry;
+namespace Toxic.Aspire.Telemetry.NewRelic;
 
 public static class ResourceBuilderExtensions
 {

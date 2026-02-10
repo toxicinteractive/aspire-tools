@@ -3,30 +3,15 @@ Contains sensible conventions and utilities for Aspire projects deployed to Azur
 
 ## How to use
 1. Install the `Toxic.Aspire` nuget package to your app host project and your individual Aspire resource projects. The package version aligns with the corresponding Aspire version.
-2. Call the `WithToxicDefaults()` extension method on your builder objects in both the app host file and each of the individual Aspire resource projects. See the [sample projects on the GitHub page](https://github.com/toxicinteractive/toxic-aspire/tree/main/src) for exact details.
-3. Use the various extension methods and utilities detailed below.
+2. Call the `WithToxicDefaults()` extension method on your builder objects in both the app host file and each of the individual Aspire resource projects. See the [wiki on the GitHub page](https://github.com/toxicinteractive/toxic-aspire/wiki) for details.
+3. Use the various extension methods and utilities included.
+4. Visit the [GitHub page](https://github.com/toxicinteractive/toxic-aspire) for a sample project and explanation of below features.
 
 ## Features
-### Default conventions
-Documentation coming.
-
-### An automatic Azure resource naming convention
-Documentation coming.
-
+### Automatic Azure resource naming convention for publish mode
 ### Includes the features of the Aspire ServiceDefaults project
-Documentation coming.
-
-### Simplify custom certificate trust for containers and JavaScript apps
-Documentation coming.
-
-### Support for Aspire (and Umbraco) running in GitHub Codespaces
-Documentation coming.
-
+### Simplify custom certificate and CA trust for projects, containers and JavaScript apps
+### Support for Umbraco running in GitHub Codespaces
 ### Use secure health probes for container apps
-Documentation coming.
-
 ### Adds a New Relic OTLP extension
-Documentation coming.
-
 ### Misc extensions and utilities
-Documentation coming.

@@ -1,6 +1,7 @@
 using Toxic.Aspire.Codespaces;
 using Toxic.Aspire.Health;
 using Toxic.Aspire.Trust;
+using Toxic.Aspire.Umbraco.Codespaces;
 
 namespace Toxic.Aspire;
 
@@ -19,7 +20,8 @@ public static class DistributedApplicationBuilderExtensions
             builder
                 .WithCustomHttpsCertificates()
                 .WithSecureHealthChecks()
-                .WithCodespacesSupport();
+                .WithCodespacesSupport()
+                .WithUmbracoCodespacesSupport();
 
             return builder;
         }

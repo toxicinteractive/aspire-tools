@@ -33,7 +33,7 @@ internal static class WebApplicationExtensions
                     Predicate = r => r.Tags.Contains("live")
                 })
                 .RequireHost("localhost", publishedHost)
-                /*.AllowAnonymous()*/;
+                /*.AllowAnonymous()*/; //TODO: confirm is this is needed in publish mode
 
             return app;
         }

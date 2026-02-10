@@ -1,7 +1,7 @@
 using Microsoft.Extensions.DependencyInjection;
-using Toxic.Aspire.Umbraco;
+using Toxic.Aspire.Codespaces;
 
-namespace Toxic.Aspire.Codespaces;
+namespace Toxic.Aspire.Umbraco.Codespaces;
 
 /// <summary>
 /// Extensions for the App Host resource builder.

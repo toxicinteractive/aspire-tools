@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="src/AspireTools/AspireTools.csproj" />
+  <Project Path="src/AspireTools.AppHost/AspireTools.AppHost.csproj" />
+  <Project Path="src/AspireTools.SampleApp/AspireTools.SampleApp.csproj" />
+</Solution>

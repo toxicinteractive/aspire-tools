@@ -1,5 +1,5 @@
 {
-  "name": "toxic-aspire",
+  "name": "aspire-toolkit",
   "image": "mcr.microsoft.com/devcontainers/dotnet:10.0",
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:latest": {},

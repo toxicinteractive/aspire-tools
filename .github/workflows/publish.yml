@@ -45,7 +45,7 @@ jobs:
         id: version
         run: |
           PACKAGE_VERSION=${{ github.ref_name }}
-          PACKAGE_NAME="Toxic.Aspire.$PACKAGE_VERSION.nupkg"
+          PACKAGE_NAME="AspireTools.$PACKAGE_VERSION.nupkg"
           ARTIFACT_NAME="package-$PACKAGE_VERSION"
 
           echo "PACKAGE_VERSION=$PACKAGE_VERSION" >> $GITHUB_OUTPUT
@@ -53,13 +53,13 @@ jobs:
           echo "ARTIFACT_NAME=$ARTIFACT_NAME" >> $GITHUB_OUTPUT
 
       - name: Pack
-        run: dotnet pack src/Toxic.Aspire --configuration Release -p:PackageVersion="${{ steps.version.outputs.PACKAGE_VERSION }}"
+        run: dotnet pack src/AspireTools --configuration Release -p:PackageVersion="${{ steps.version.outputs.PACKAGE_VERSION }}"
 
       - uses: actions/upload-artifact@v6
         if: ${{ success() }}
         with:
           name: ${{ steps.version.outputs.ARTIFACT_NAME }}
-          path: "src/Toxic.Aspire/bin/Release/${{ steps.version.outputs.PACKAGE_NAME }}"
+          path: "src/AspireTools/bin/Release/${{ steps.version.outputs.PACKAGE_NAME }}"
 
   publish-to-github:
     name: Publish to GitHub

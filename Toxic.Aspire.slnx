@@ -1,5 +1,0 @@
-<Solution>
-  <Project Path="src/Toxic.Aspire/Toxic.Aspire.csproj" />
-  <Project Path="src/Toxic.Aspire.AppHost/Toxic.Aspire.AppHost.csproj" />
-  <Project Path="src/Toxic.Aspire.SampleApp/Toxic.Aspire.SampleApp.csproj" />
-</Solution>

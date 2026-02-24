@@ -13,6 +13,9 @@ var builder = DistributedApplication
     .WithAzureNamingConvention("project");
 
 builder
+    .AddAzureContainerAppEnvironment("container-env");
+
+builder
     .AddProject<Projects.AspireTools_SampleApp>("api")
     
     // without this, the Azure resource name will be: "ca-project-prod-swc" (without resource name)

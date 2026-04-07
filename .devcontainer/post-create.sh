@@ -26,5 +26,5 @@ fi
 mkdir -p $AZURE_CONFIG_DIR
 sudo chown $USER:$USER $AZURE_CONFIG_DIR
 
-dotnet new install Aspire.ProjectTemplates@13.1.0
-dotnet tool install -g Aspire.Cli --version 13.1.0
+dotnet new install Aspire.ProjectTemplates@13.2.1
+dotnet tool install -g Aspire.Cli --version 13.2.1

@@ -77,7 +77,7 @@ jobs:
       IS_PRE_RELEASE: ${{ inputs.is-pre-release }}
 
     steps:
-      - uses: actions/download-artifact@v5
+      - uses: actions/download-artifact@v8
 
       - name: Publish
         run: |

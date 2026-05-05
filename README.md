@@ -2,7 +2,7 @@
 Contains sensible conventions and utilities for Aspire projects deployed to Azure, used internally at Toxic Interactive Solutions.
 
 ## How to use
-1. Install the `AspireTools` nuget package to your app host project and your individual Aspire resource projects. The package version aligns with the corresponding Aspire version.
+1. Install the [AspireTools nuget package](https://www.nuget.org/packages/AspireTools) to your app host project and your individual Aspire resource projects. The package version aligns with the corresponding Aspire version.
 2. Call the `WithAspireToolsDefaults()` extension method on your builder objects in both the app host file and each of the individual Aspire resource projects. See the [wiki on the GitHub page](https://github.com/toxicinteractive/aspire-tools/wiki) for details.
 3. Use the various extension methods and utilities included.
 4. Visit the [GitHub page](https://github.com/toxicinteractive/aspire-tools) for a sample project and explanation of below features.

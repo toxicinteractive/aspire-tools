@@ -15,7 +15,7 @@ public static class WebApplicationExtensions
         /// This should be called in every project that is orchestrated by the App Host.
         /// Should be called on both the <see cref="WebApplicationBuilder"/> and the <see cref="WebApplication"/>.
         /// </summary>
-        public WebApplication WithAspireToolkitDefaults()
+        public WebApplication WithAspireToolsDefaults()
         {
             return app
                 .MapHealthCheckEndpoints();

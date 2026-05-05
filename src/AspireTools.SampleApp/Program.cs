@@ -2,11 +2,11 @@ using AspireTools;
 
 var builder = WebApplication
     .CreateBuilder(args)
-    .WithAspireToolkitDefaults();
+    .WithAspireToolsDefaults();
 
 var app = builder
     .Build()
-    .WithAspireToolkitDefaults();
+    .WithAspireToolsDefaults();
 
 var summaries = new[]
 {

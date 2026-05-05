@@ -1,4 +1,4 @@
-<Project Sdk="Aspire.AppHost.Sdk/13.2.1">
+<Project Sdk="Aspire.AppHost.Sdk/13.2.4">
   <ItemGroup>
     <ProjectReference Include="..\AspireTools\AspireTools.csproj" IsAspireProjectResource="false" />
     <ProjectReference Include="..\AspireTools.SampleApp\AspireTools.SampleApp.csproj" />

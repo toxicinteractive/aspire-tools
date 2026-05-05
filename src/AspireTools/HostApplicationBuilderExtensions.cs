@@ -17,7 +17,7 @@ public static class HostApplicationBuilderExtensions
         /// This should be called in every project that is orchestrated by the App Host.
         /// Should be called on both the <see cref="Microsoft.AspNetCore.Builder.WebApplicationBuilder"/> and the <see cref="Microsoft.AspNetCore.Builder.WebApplication"/>.
         /// </summary>
-        public TBuilder WithAspireToolkitDefaults()
+        public TBuilder WithAspireToolsDefaults()
         {
             builder
                 .ConfigureOpenTelemetry()

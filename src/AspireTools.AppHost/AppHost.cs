@@ -50,7 +50,7 @@ if (builder.ExecutionContext.IsCodespace)
 }
 
 var app = builder
-    .WithAspireToolkitDefaults()
+    .WithAspireToolsDefaults()
     .Build();
 
 // this is available when the app host is running in a GitHub Codespace

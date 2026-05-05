@@ -28,7 +28,7 @@ internal static class ResourceBuilderExtensions
             builder.OnResourceEndpointsAllocated((resource, @event, cancellationToken) =>
             {
                 var codespaceUrlService = @event.Services.GetService<CodespaceUrlService>() ??
-                    throw new InvalidOperationException($"You must call builder.{nameof(AspireTools.DistributedApplicationBuilderExtensions.WithAspireToolkitDefaults)}() first.");
+                    throw new InvalidOperationException($"You must call builder.{nameof(AspireTools.DistributedApplicationBuilderExtensions.WithAspireToolsDefaults)}() first.");
 
                 var codespaceUrl = codespaceUrlService.GetCodespaceUrl(resource);
 

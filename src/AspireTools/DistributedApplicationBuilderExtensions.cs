@@ -13,9 +13,9 @@ public static class DistributedApplicationBuilderExtensions
     extension(IDistributedApplicationBuilder builder)
     {
         /// <summary>
-        /// Adds opinionated services and options provided by the Toxic Aspire toolkit.
+        /// Adds opinionated services and options provided by the Toxic Aspire tools.
         /// </summary>
-        public IDistributedApplicationBuilder WithAspireToolkitDefaults()
+        public IDistributedApplicationBuilder WithAspireToolsDefaults()
         {
             builder
                 .WithCustomHttpsCertificates()

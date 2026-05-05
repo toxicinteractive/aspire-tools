@@ -55,7 +55,7 @@ jobs:
       - name: Pack
         run: dotnet pack src/AspireTools --configuration Release -p:PackageVersion="${{ steps.version.outputs.PACKAGE_VERSION }}"
 
-      - uses: actions/upload-artifact@v6
+      - uses: actions/upload-artifact@v7
         if: ${{ success() }}
         with:
           name: ${{ steps.version.outputs.ARTIFACT_NAME }}
@@ -116,7 +116,7 @@ jobs:
       PACKAGE_NAME: ${{ needs.pack.outputs.package-name }}
 
     steps:
-      - uses: actions/download-artifact@v5
+      - uses: actions/download-artifact@v8
 
       - name: Get API key
         uses: NuGet/login@v1
